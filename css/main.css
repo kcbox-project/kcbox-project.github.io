@@ -52,7 +52,7 @@ a:visited {
 #topbar {
     width: 100%;
     margin: 0;
-    background-color: #74992e;
+    background-color: #EEE;
     border-bottom: 1px solid #CCC;
     min-height: 100px;
 }
@@ -61,8 +61,8 @@ a:visited {
     position: absolute;
     left: 130px;
     top: -20px;
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
 }
 
 #title {
