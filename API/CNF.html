@@ -97,10 +97,18 @@ div.content {
   <h2>Clause</h2>
   <p>We remark that the member Literal * _lits must be managed outside.</p>
   <ul>
+    <li>Clause(Literal lit)</li>
+    <p>Create a unit clause.</p>
+    <li>Clause(Literal lit0, Literal lit1)</li>
+    <p>Create a binary clause.</p>
+    <li>Clause(const Literal * lits, unsigned size)</li>
+    <p>Create a clause with a given size.</p>
+    <li>Clause(const vector<Literal> & lits)</li>
+    <p>Create a clause with literals in the given vector.</p>
     <li>Copy Constructor</li>
-    <p>The output clause shares the memory of literals with the input clause.</p>
+    <p>The output clause shares the address of _lits with the input clause.</p>
     <li>Destructor</li>
-    <p>Each destruction must be after Free() is invoked.</p>
+    <p>The destruction does not free the memory for _lits. Call Free() if you want to free it.</p>
   </ul>
    
   <h2>CNF formula</h2>
