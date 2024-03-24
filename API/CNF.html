@@ -95,20 +95,20 @@ div.content {
     <li><code>bool Sign()</code></li><p>This function returns the sign of the literal, where true means positive and false means negative.</p>
   </ul>
   <h2>Clause</h2>
-  <p>We remark that the member Literal * _lits must be managed outside.</p>
+  <p>We remark that the member <code>Literal * _lits</code> must be managed outside.</p>
   <ul>
-    <li>Clause(Literal lit)</li>
+    <li><code>Clause(Literal lit)</code></li>
     <p>Create a unit clause.</p>
-    <li>Clause(Literal lit0, Literal lit1)</li>
+    <li><code>Clause(Literal lit0, Literal lit1)</code></li>
     <p>Create a binary clause.</p>
-    <li>Clause(const Literal * lits, unsigned size)</li>
+    <li><code>Clause(const Literal * lits, unsigned size)</code></li>
     <p>Create a clause with a given size.</p>
-    <li>Clause(const vector<Literal> & lits)</li>
+    <li><code>Clause(const vector<Literal> & lits)</code></li>
     <p>Create a clause with literals in the given vector.</p>
-    <li>Copy Constructor</li>
-    <p>The output clause shares the address of _lits with the input clause.</p>
+    <li>Copy constructor</li>
+    <p>The output clause shares the address of <code>_lits</code> with the input clause.</p>
     <li>Destructor</li>
-    <p>The destruction does not free the memory for _lits. Call Free() if you want to free it.</p>
+    <p>The destruction does not free the memory for <code>_lits</code>. Call <code>Free()</code> if you want to free it.</p>
   </ul>
    
   <h2>CNF formula</h2>
