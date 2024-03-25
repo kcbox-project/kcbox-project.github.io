@@ -109,6 +109,19 @@ div.content {
     <p>The output clause shares the address of <code>_lits</code> with the input clause.</p>
     <li>Destructor</li>
     <p>The destruction does not free the memory for <code>_lits</code>. Call <code>Free()</code> if you want to free it.</p>
+    <li><code>Clause Copy()</code></li>
+    <p>Copy a clause with reallocated memory for <code>_lits</code></p>
+    <li><code>void Free()</code></li>
+    <li><code>unsigned Size()</code></li>
+    <li><code>void Shrink(unsigned size)</code></li>
+    <li><code>Literal & operator [] ( unsigned i )</code></li>
+    <li><code>Literal & Last_Lit()</code></li>
+    <li><code>void Erase_Lit(unsigned i)</code></li>
+    <li><code>void Swap_Lits(unsigned i, unsigned j)</code></li>
+    <li><code>void Swap(Clause & clause)</code></li>
+    <li><code>void Sort(QSorter & sorter)</code></li>
+    <li><code>void Sort(const unsigned * var_rank)</code></li>
+    <li><code>void Display(ostream & out)</code></li>
   </ul>
    
   <h2>CNF formula</h2>
