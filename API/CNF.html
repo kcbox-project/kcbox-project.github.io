@@ -149,6 +149,14 @@ div.content {
     <p>Create an empty CNF formula with a stated maximum variable.</p>
     <li><code>CNF_Formula(istream & fin)</code></li>
     <p>Create a CNF formula from a file in DIMACS format.</p>
+    <li><code>void Add_Unary_Clause( Literal lit )</code></li>
+    <li><code>void Add_Binary_Clause( Literal lit0, Literal lit1 )</code></li>
+    <li><code>void Add_Ternary_Clause( Literal lit0, Literal lit1, Literal lit2 )</code></li>
+    <li><code>void Add_Clause( Clause & cl )</code></li>
+    <li><code>void Input_Clause( Clause & cl )</code></li>
+    <li><code>Variable Max_Var() const</code></li>
+    <li><code>unsigned Num_Clauses() const</code></li>
+    <li><code>Clause & operator [] ( unsigned i )</code></li>
   </ul>
   <h2>EPCCL theories</h2>
   <h2>Weighted CNF formula</h2>
