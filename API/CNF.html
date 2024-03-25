@@ -110,18 +110,29 @@ div.content {
     <li>Destructor</li>
     <p>The destruction does not free the memory for <code>_lits</code>. Call <code>Free()</code> if you want to free it.</p>
     <li><code>Clause Copy()</code></li>
-    <p>Copy a clause with reallocated memory for <code>_lits</code></p>
+    <p>Returns a copied clause with reallocated memory for <code>_lits</code></p>
     <li><code>void Free()</code></li>
+    <p>Free the memory for <code>_lits</code>.</p>
     <li><code>unsigned Size()</code></li>
+    <p>Returns the number of literals.</p>
     <li><code>void Shrink(unsigned size)</code></li>
+    <p>Reduce the number of literals given by <var>size</var>.</p>
     <li><code>Literal & operator [] ( unsigned i )</code></li>
+    <p>Returns the <var>i</var>-th literal.</p>
     <li><code>Literal & Last_Lit()</code></li>
+    <p>Returns the last literal.</p>
     <li><code>void Erase_Lit(unsigned i)</code></li>
+    <p>Erase the <var>i</var>-th literal and move the last to the position <var>i</var>.</p>
     <li><code>void Swap_Lits(unsigned i, unsigned j)</code></li>
+    <p>Swap two literals at positions <var>i</var> and <var>j</var>.</p>
     <li><code>void Swap(Clause & clause)</code></li>
+    <p>Swap the literals of two clauses.</p>
     <li><code>void Sort(QSorter & sorter)</code></li>
+    <p>Sort the literals wrt the unsigned values of the variables.</p>
     <li><code>void Sort(const unsigned * var_rank)</code></li>
+    <p>Sort the literals wrt the variable rank as <code>var_rank</code></p>
     <li><code>void Display(ostream & out)</code></li>
+    <p>Display the clause.</p>
   </ul>
    
   <h2>CNF formula</h2>
