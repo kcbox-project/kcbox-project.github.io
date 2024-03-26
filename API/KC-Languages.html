@@ -89,8 +89,12 @@ div.content {
   <ul>
     <li>Constructors</li>
     <p>We can construct a variable via a default constructor, a copy constructor, a constructor that takes in an unsigned integer as initial size, or a constructor that takes in a vector of unsigned integers.</p>
-    <li><code>void Assign( vector<unsigned>::iterator begin, vector<unsigned>::iterator end )</code></li>
+    <li><code>void Assign(vector<unsigned>::iterator begin, vector<unsigned>::iterator end)</code></li>
     <p></p>
+    <li><code>void Reserve(unsigned capa)</code></li>
+    <li><code>void Append(unsigned elem)</code></li>
+    <li><code>void Append(unsigned * elems, unsigned size)</code></li>
+    <li><code>void Append(vector<unsigned>::iterator begin, vector<unsigned>::iterator end)</code></li>
   </ul>
 </div>
 
