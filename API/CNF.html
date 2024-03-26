@@ -150,13 +150,21 @@ div.content {
     <li><code>CNF_Formula(istream & fin)</code></li>
     <p>Create a CNF formula from a file in DIMACS format.</p>
     <li><code>void Add_Unary_Clause( Literal lit )</code></li>
+    <p>Add an unary clause with the literal given by <code>lit</code>.</p>
     <li><code>void Add_Binary_Clause( Literal lit0, Literal lit1 )</code></li>
+    <p>Add a binary clause with the literals given by <code>lit0</code> and <code>lit1</code>.</p>
     <li><code>void Add_Ternary_Clause( Literal lit0, Literal lit1, Literal lit2 )</code></li>
+    <p>Add a ternary clause with the literals given by <code>lit0</code>, <code>lit1</code> and <code>lit2</code>.</p>
     <li><code>void Add_Clause( Clause & cl )</code></li>
+    <p>Add a clause, where the memory for storing literals will be reallocate.</p>
     <li><code>void Input_Clause( Clause & cl )</code></li>
+    <p>Input a clause, where the memory of <code>_lits</code> will be used by the CNF formula.</p>
     <li><code>Variable Max_Var() const</code></li>
+    <p>Return the admitted maximum variable.</p>
     <li><code>unsigned Num_Clauses() const</code></li>
+    <p>Return the number of clauses.</p>
     <li><code>Clause & operator [] ( unsigned i )</code></li>
+    <p>Returns the <var>i</var>-th clause.</p>
   </ul>
   <h2>EPCCL theories</h2>
   <h2>Weighted CNF formula</h2>
